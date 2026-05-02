@@ -1,0 +1,540 @@
+body {
+    font-family: 'Inter', sans-serif;
+   
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('images/boat.png'); /* change this filename */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* ← this is your tint color */
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: #e9ecef !important;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/*---------------------------------------------------------*/
+
+
+/* Logo and nav spacing */
+.custom-navbar {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo-img {
+    height: 90px !important;
+    width: auto;
+    max-height: none;
+    object-fit: contain;
+    max-width: none;
+    display: block;
+}
+
+
+
+.hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    color: #00aaff;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 12px rgba(252, 250, 250, 0.1);
+    transition: top 0.4s ease-in-out;
+    padding: 20px 0;
+}
+
+.mobile-menu.active {
+    top: 100%;
+}
+
+.mobile-menu .close-btn {
+    font-size: 28px;
+    text-align: right;
+    padding: 0 20px;
+    cursor: pointer;
+    color: #00aaff;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mobile-menu .nav-link {
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/*--------------------------------------------------*/
+.about-section {
+    display: flex;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.about-image {
+    flex: 1;
+    background-image: url('images/cleanboat2.png'); /* change to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; /* parallax effect */
+
+}
+
+.about-text {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 60px;
+    color: #333;
+}
+
+.about-text h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+.about-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.about-image-col {
+    flex: 1 1 50%;
+    padding-right: 30px; /* <-- add spacing between image and text */
+}
+
+.about-image-col img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text-col {
+    flex: 1 1 50%;
+    color: #333;
+}
+
+.about-text-col h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text-col p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-image-col,
+    .about-text-col {
+        flex: 1 1 100%;
+        padding: 10px 0;
+    }
+
+
+    .about-text-col {
+        padding-left: 0 !important;
+    }
+}
+
+/*-------------------------------------*/
+
+.ceramic-section {
+    padding: 40px 0 80px;
+    background-color: dde2e9;
+}
+
+.ceramic-text-col {
+    flex: 1 1 50%;
+    color: #333;
+}
+
+.ceramic-text-col h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.ceramic-text-col p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.ceramic-image-col {
+    flex: 1 1 50%;
+}
+
+.ceramic-image-col img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .ceramic-text-col,
+    .ceramic-image-col {
+        flex: 1 1 100%;
+        padding: 10px 0;
+    }
+
+    .ceramic-text-col {
+        padding-right: 0 !important;
+    }
+}
+
+
+
+/*---------------------------------------------------------*/
+#services {
+    padding: 60px 0;
+    background-color: #dde2e9; /* Set the background to white */
+}
+
+/*------------------------------------------------------------------------*/
+
+.before-after-container {
+    max-width: 800px;
+    position: relative;
+  }
+  
+  .twentytwenty-container {
+    position: relative;
+  }
+  
+  /* Optional: Center labels */
+  .twentytwenty-before-label,
+  .twentytwenty-after-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-weight: bold;
+    z-index: 5;
+    pointer-events: none;
+  }
+  
+  .twentytwenty-before-label {
+    left: 10%;
+  }
+  
+  .twentytwenty-after-label {
+    right: 10%;
+  }
+  
+/*----------------------------------------------*/
+
+.gallery-section {
+    background-color: #d0d5da; /* light gray */
+    padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+    .gallery-section img {
+      max-width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  
+  .gallery-section .btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+}
+
+/*--------------------------------------------------*/
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form .form-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  form .form-control {
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  form button.btn {
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+  }
+  /*-----------------------------*/
+
+  #galleryMenu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  #galleryMenu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+/*--------------------------------------------*/
+/* Gallery Dropdown for Mobile */
+.dropdown-menu-mobile {
+    display: none;
+    transition: all 0.3s ease-in-out;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .dropdown-menu-mobile.show {
+    display: block;
+  }
+/*----------------------------------------------------*/
+@media (max-width: 768px) {
+    .ceramic-text-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .ceramic-text-col > * {
+      max-width: 100%;
+    }
+  
+    .about-section {
+      height: auto !important;
+      overflow: visible !important;
+      flex-direction: column;
+    }
+  
+    .about-text-col {
+      text-align: center;
+    }
+  
+    .about-text-col .btn {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+  
+
+
+  /*--------------------New Button------------------------------*/
+ 
+.newbutton{
+ color: #1f1e1e;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #f2f5f7;
+  cursor: pointer;
+  border: 1px solid #e6e8e9;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #4b4a4a, -6px -6px 12px #474747;
+  text-decoration: none;
+}
+
+.newbutton:active {
+  color: #c5c2c2;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #9a9a9b;
+}
+
+button {
+  color: #ffffff;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #5ac2ff;
+  cursor: pointer;
+  border: 1px solid #4488af;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #4b4a4a, -6px -6px 12px #f9fafa;
+}
+
+button:active {
+  color: #e7e2e2;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #b2e1fc;
+}
+/*------------Stylized new seections------------*/
+.about-text-col h2 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4da3ff;
+  margin-bottom: 12px;
+}
+
+.about-text-col h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #1f1f1f;
+}
+
+.about-text-col p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 520px;
+}
+/*---highlighted words*/
+.accent {
+  color: #4da3ff;
+}
+
+/*---------OUR SERVICE SECTION---------*/
+#services {
+  background: #e9edf2;
+}
+
+#services h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #1f1f1f;
+}
+
+.service-card {
+  background: transparent;
+  padding: 0 30px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #1f1f1f;
+}
+
+.service-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Section label like ABOUT US */
+.section-label {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: bold;
+  color: #4da3ff;
+  margin-bottom: 40px;
+}
+
+/* Service titles = BIG & important */
+#services h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-bottom: 14px;
+}
+
+/* Premium Ceramic title */
+.ceramic-section h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #1f1f1f;
+  margin-bottom: 20px;
+}
