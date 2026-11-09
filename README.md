@@ -2,6 +2,8 @@
 
 **Live Website:** [https://boatcleaningfl.com/](https://boatcleaningfl.com/)
 
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/cjsantizo/Boat-Cleaning-website/badge)](https://scorecard.dev/viewer/?uri=github.com/cjsantizo/Boat-Cleaning-website)
+
 ## Project Overview
 
 Boat Cleaning Website is a business website developed using **HTML, CSS, and JavaScript** to showcase professional boat cleaning services.
