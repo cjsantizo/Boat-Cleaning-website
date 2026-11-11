@@ -4,6 +4,8 @@
 
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/cjsantizo/Boat-Cleaning-website/badge)](https://scorecard.dev/viewer/?uri=github.com/cjsantizo/Boat-Cleaning-website)
 
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16574/badge)](https://www.bestpractices.dev/projects/16574)
+
 ## Project Overview
 
 Boat Cleaning Website is a business website developed using **HTML, CSS, and JavaScript** to showcase professional boat cleaning services.
