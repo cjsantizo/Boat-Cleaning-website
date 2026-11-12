@@ -96,6 +96,9 @@ Alternatively:
 
 ```text
 Boat-Cleaning-website/
+├── .github/
+│   ├── workflows/      # Scorecard security workflow
+│   └── dependabot.yml  # Dependabot configuration
 ├── images/             # Website images and assets
 ├── index.html          # Main homepage
 ├── gallery.html        # Photo gallery page
@@ -103,6 +106,9 @@ Boat-Cleaning-website/
 ├── boatstyle.css       # Website styling
 ├── boatFunction.js     # JavaScript functionality
 ├── .gitignore
+├── CONTRIBUTING.md     # Contribution guidelines
+├── LICENSE             # MIT License
+├── SECURITY.md         # Security policy
 └── README.md           # Project documentation
 ```
 
